@@ -82,10 +82,26 @@
             margin-top: 30px;
         }
 
-        hr {
+        /* 定制分割线样式 */
+        hr.custom-divider {
             border: none;
-            border-top: 2px solid #e74c3c;
-            margin: 20px 0;
+            height: 2px;
+            background-color: #3498db; /* 分割线的颜色 */
+            margin: 40px 0;
+            border-radius: 5px;
+            position: relative;
+        }
+
+        hr.custom-divider::before {
+            content: '⬤ ⬤ ⬤'; /* 分割线的装饰图标 */
+            font-size: 1.2em;
+            color: #3498db;
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #fff;
+            padding: 0 10px;
         }
 
         @media (max-width: 768px) {
@@ -112,6 +128,8 @@
             </div>
         </section>
 
+        <hr class="custom-divider">
+
         <section class="news">
             <h3>Recent News:</h3>
             <ul>
@@ -123,6 +141,8 @@
             </ul>
         </section>
 
+        <hr class="custom-divider">
+
         <section class="research">
             <h3>Research Interests:</h3>
             <ul>
@@ -131,12 +151,16 @@
             </ul>
         </section>
 
+        <hr class="custom-divider">
+
         <section class="services">
             <h3>Activities:</h3>
             <ul>
                 <li>Reviewer of CVPR / AAAI / TMM / TCSVT.</li>
             </ul>
         </section>
+
+        <hr class="custom-divider">
 
         <section class="publications">
             <h3>Selected Publications:</h3>
