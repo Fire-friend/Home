@@ -52,7 +52,7 @@
 
         .header {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             align-items: center;
             padding: 20px 0;
         }
@@ -60,6 +60,9 @@
         .header img {
             width: 150px;
             height: auto;
+            margin-right: 20px;
+            border-radius: 50%;
+            /* 调整图片的样式，可以加圆角等效果 */
         }
 
         .header h1 {
@@ -90,6 +93,10 @@
                 flex-direction: column;
                 text-align: center;
             }
+
+            .header img {
+                margin-bottom: 20px;
+            }
         }
     </style>
 </head>
@@ -97,6 +104,8 @@
 <body>
     <div class="wrapper">
         <section class="header">
+            <img src="your-image-url.jpg" alt="Jiawei Wu">
+            <!-- 请将 'your-image-url.jpg' 替换为你自己的照片URL -->
             <div>
                 <h1>Jiawei Wu (吴嘉炜)</h1>
                 <p><strong>PhD Candidate</strong><br> wujw97@mail2.sysu.edu.cn<br> Sun Yat-sen University, Shenzhen, China.</p>
@@ -128,14 +137,6 @@
                 <li>Reviewer of CVPR / AAAI / TMM / TCSVT.</li>
             </ul>
         </section>
-
-        <!-- <section class="awards">
-            <h3>Awards:</h3>
-            <ul>
-                <li>Lenovo Scholarship, Sept. 2022</li>
-                <li>Excellent graduates of Liaoning Province (~ Top 3%), July. 2019</li>
-            </ul>
-        </section> -->
 
         <section class="publications">
             <h3>Selected Publications:</h3>
